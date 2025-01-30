@@ -6,7 +6,7 @@ with source as (
     #}
     select * from {{ source('postgres_db', 'raw_customers') }}
 
-),
+), 
 
 force_seed_dep as (
     {#-
